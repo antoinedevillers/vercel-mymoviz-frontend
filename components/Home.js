@@ -13,7 +13,7 @@ function Home() {
  useEffect(() => {
   console.log('Mount')
 
-  fetch('http://localhost:3000/movies')
+  fetch('https://vercel-mymoviz-backend.vercel.app/movies')
   .then(response => response.json())
   .then(data => {
     setMoviesDatabase(data.movies)
